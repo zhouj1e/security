@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gcxy.security.mapper.checkList.CheckListMapper">
+    <insert id="insertRecord" parameterType="gcxy.security.bean.CheckList">
+      insert into checklist(datetime,chart_id,check_score,chart_json,checker_name,check_id,checker_id) values (#{datetime},#{chart_id},#{check_score},#{chart_json},#{checker_name},#{check_id},#{checker_id})
+   </insert>
+    <select id="getCheckListById" parameterType="gcxy.security.bean.CheckList">
+        select * from checklist where check_id=#{check_id}
+    </select>
+
+</mapper>

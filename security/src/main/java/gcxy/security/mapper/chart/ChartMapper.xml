@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gcxy.security.mapper.chart.ChartMapper">
+
+    <select id="getAllCharts" resultType="gcxy.security.bean.Chart">
+    select * from chart ;
+</select>
+
+    <select id="getChart" resultType="gcxy.security.bean.Chart"  parameterType="int">
+    select * from chart where chart_id=#{chart_id};
+</select>
+
+    <select id="getChartByChapter_id" resultType="gcxy.security.bean.Chart"  parameterType="int">
+    select * from chart where chapter_id=#{chapter_id};
+</select>
+
+</mapper>
