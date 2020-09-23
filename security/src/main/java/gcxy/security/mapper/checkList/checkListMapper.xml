@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gcxy.security.mapper.checkList.CheckListMapper">
     <insert id="insertRecord" parameterType="gcxy.security.bean.CheckList">
-      insert into checklist(datetime,chart_id,check_score,chart_json,checker_name,check_id,checker_id) values (#{datetime},#{chart_id},#{check_score},#{chart_json},#{checker_name},#{check_id},#{checker_id})
+      insert into checklist(check_id,check_json) values (#{check_id},#{check_json})
    </insert>
     <select id="getCheckListById" parameterType="gcxy.security.bean.CheckList">
         select * from checklist where check_id=#{check_id}

@@ -14,11 +14,11 @@ public class CheckListService {
 
     /**
      * 插入单条打分记录
-     * @param checkList
+     * @param check
      * @return
      */
-    public int insertRecord(CheckList checkList){
-        return checkListMapper.insertRecord(checkList);
+    public int insertRecord(CheckList check){
+        return checkListMapper.insertRecord(check);
     }
 
     /**

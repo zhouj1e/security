@@ -8,10 +8,10 @@ import org.apache.ibatis.annotations.Param;
 public interface CheckListMapper {
     /**
      * 插入打分记录
-     * @param checkList
+     * @param check
      * @return
      */
-    int insertRecord(CheckList checkList);
+    int insertRecord(CheckList check);
 
     CheckList getCheckListById(@Param("id")int check_id);
 }
