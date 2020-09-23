@@ -1,7 +1,6 @@
 package gcxy.security.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.sun.istack.internal.NotNull;
 import gcxy.security.bean.CheckList;
 import gcxy.security.service.CheckListService;

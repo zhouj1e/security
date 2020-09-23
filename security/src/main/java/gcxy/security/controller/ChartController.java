@@ -38,7 +38,17 @@ public class ChartController {
      * @return
      */
     @GetMapping("/chart")
-    public ResponseInformation getChartByChapter_id(@NotNull  int chapter_id){
+    public ResponseInformation getChartByChapter_id(@NotNull  String chapter_id){
         return ResponseInformation.success(chartService.getChartByChapter_id(chapter_id));
+    }
+
+    /**
+     * 根据chart_id获取regulation
+     * @param chart_id
+     * @return
+     */
+    @GetMapping("/regulation")
+    public ResponseInformation getRegulationByChartId(@NotNull int chart_id){
+        return ResponseInformation.success(chartService.getRegulationByChartId(chart_id));
     }
 }

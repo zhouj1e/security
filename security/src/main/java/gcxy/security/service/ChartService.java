@@ -37,7 +37,16 @@ public class ChartService {
      * @param chart_id
      * @return
      */
-    public List<Chart> getChartByChapter_id(int chart_id ){
+    public List<Chart> getChartByChapter_id(String chart_id ){
         return  chartMapper.getChartByChapter_id(chart_id);
+    }
+
+    /**
+     * 根据chart_id获取regulation
+     * @param chart_id
+     * @return
+     */
+    public List<Chart> getRegulationByChartId(int chart_id  ){
+        return chartMapper.getRegulationByChartId(chart_id);
     }
 }

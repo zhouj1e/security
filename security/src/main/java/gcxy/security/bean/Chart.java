@@ -7,7 +7,7 @@ public class Chart {
 
     private Integer score;
 
-    private Integer chapter_id;
+    private String chapter_id;
 
     private String regulation;
 
@@ -35,11 +35,11 @@ public class Chart {
         this.score = score;
     }
 
-    public Integer getChapter_id() {
+    public String getChapter_id() {
         return chapter_id;
     }
 
-    public void setChapter_id(Integer chapter_id) {
+    public void setChapter_id(String chapter_id) {
         this.chapter_id = chapter_id;
     }
 

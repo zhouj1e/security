@@ -12,8 +12,12 @@
     select * from chart where chart_id=#{chart_id};
 </select>
 
-    <select id="getChartByChapter_id" resultType="gcxy.security.bean.Chart"  parameterType="int">
+    <select id="getChartByChapter_id" resultType="gcxy.security.bean.Chart"  parameterType="string">
     select * from chart where chapter_id=#{chapter_id};
 </select>
+
+    <select id="getRegulationByChartId" resultType="gcxy.security.bean.Chart" parameterType="int">
+        select chart_id, regulation from chart where chart_id=#{chart_id};
+    </select>
 
 </mapper>

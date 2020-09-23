@@ -26,5 +26,12 @@ public interface ChartMapper {
      * @param chapter_id
      * @return
      */
-    List<Chart>getChartByChapter_id(@Param("chapter_id")  int chapter_id);
+    List<Chart>getChartByChapter_id(@Param("chapter_id")  String chapter_id);
+
+    /**
+     * 根据chart_id获取regulation
+     * @param chart_id
+     * @return
+     */
+    List<Chart>getRegulationByChartId(@Param("chart_id") int chart_id);
 }
